@@ -5,77 +5,88 @@
   <title>Employee Management Database</title>
   
   <!-- Added link to the jQuery Library -->
-  
+
+
+  <!-- Font Awesome link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Added a link to Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
   
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1 class="display-4">Employee Database</h1>
+            <h1 class="display-4">Employee Database <i class="fas fa-database"></i></h1>
+            <hr>
             <p class="lead">This database is a list of all employees and their associated employee information</p>
-        </div><br>
+        </div>
+        
+        <br><br>
     
     <div class="card">
-        <h5 class="card-header">Employee Table</h5>
-        <div class="card-body">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Role</th>
-                <th scope="col">Start Date</th>
-                <th scope="col">Months Worked</th>
-                <th scope="col">Monthly Rate</th>
-                <th scope="col">Total Billed</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                
-                <td id="tbl_name">Mark</td>
-                <td id="tbl_role">Otto</td>
-                <td id="tbl_stdate">@mdo</td>
-                <td id="tbl_monw">@mdo</td>
-                <td id="tbl_monr">@mdo</td>
-                <td id="tbl_totbil">@mdo</td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
-    </div><br>
-        <div class="card">
-            <h5 class="card-header">Add Employee</h5>
-            <div class="card-body">
-                <form>
-                    <div class="form-group">
-                      <label for="exampleFormControlInput1">Employee Name</label>
-                      <input type="text" class="form-control" id="frm_name" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlSelect1">Employee Role</label>
-                      <input type="text" class="form-control" id="frm_role" placeholder="Role">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Employee Start Date</label>
-                        <input type="text" class="form-control" id="frm_date" placeholder="MM/DD/YYYY">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Employee Pay Rate</label>
-                        <input type="text" class="form-control" id="frm_rate" placeholder="Rate">
-                    </div>
-                    <div>
-                        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                  </form>
+      <div class="box1">
+            <h5 class="card-header">Employee Table <i class="fas fa-users"></i></h5>
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">Months Worked</th>
+                        <th scope="col">Monthly Rate</th>
+                        <th scope="col">Total Billed</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td id="tbl_name">Mark</td>
+                        <td id="tbl_role">Otto</td>
+                        <td id="tbl_stdate">@mdo</td>
+                        <td id="tbl_monw">@mdo</td>
+                        <td id="tbl_monr">@mdo</td>
+                        <td id="tbl_totbil">@mdo</td>                      
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-            </div>
+             </div>
+          </div>
+    <br><br><br>
+        <div class="card">
+          <div class="box2">
+                <h5 class="card-header">Add Employee <i class="fas fa-user-plus"></i></h5>
+                  <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Employee Name</label>
+                            <input type="text" class="form-control" id="frm_name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Employee Role</label>
+                            <input type="text" class="form-control" id="frm_role" placeholder="Role">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Employee Start Date</label>
+                            <input type="text" class="form-control" id="frm_date" placeholder="MM/DD/YYYY">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Employee Pay Rate</label>
+                            <input type="text" class="form-control" id="frm_rate" placeholder="Rate">
+                        </div>
+
+                        <div>
+                            <button id="submit" type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        </div>
+                    </form>
+                  </div>
+              </div>
+          </div>
       </div>
-  
-    </div>
+  </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
